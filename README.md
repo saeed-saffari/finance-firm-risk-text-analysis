@@ -27,16 +27,6 @@ finance-firm-risk-text-analysis/
 
 ---
 
-## Folder Descriptions
-
-### inputs_sample/
-Shows small, synthetic examples of the expected input format.
-
-### outputs_sample/
-Demonstrates the final output files created by the pipeline.
-
----
-
 ## Code Overview
 
 ### 1. EC_Extraction_May17_Saeed.py
