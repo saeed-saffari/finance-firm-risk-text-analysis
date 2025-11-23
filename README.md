@@ -16,12 +16,12 @@ The goal of this project is to take raw EC transcripts from many countries and p
 ## Project Structure
 
 ```
-finance_ec_text_analysis/
+finance-firm-risk-text-analysis/
 │
 ├── codes/                     # All Python scripts
 ├── inputs_sample/             # Sample inputs showing expected structure
 ├── outputs_sample/            # Sample outputs demonstrating final format
-├── diagrams/                  # Pipeline overview diagram
+├── diagrams                   # Pipeline overview diagram
 └── README.md
 ```
 
@@ -35,39 +35,36 @@ Shows small, synthetic examples of the expected input format.
 ### outputs_sample/
 Demonstrates the final output files created by the pipeline.
 
-### diagrams/
-Contains a pipeline overview diagram.
-
 ---
 
 ## Code Overview
 
-### 1. preprocess.py
+### 1. EC_Extraction_May17_Saeed.py
+Extracts Q&A sections from raw EC files.
+
+### 2. preprocess.py
 Cleans parsed sentences and produces unigram text.
 
-### 2. parse_parallel.py
+### 3. parse_parallel.py
 Splits raw transcripts into sentences using CoreNLP.
 
-### 3. clean_and_train.py
+### 4. clean_and_train.py
 Trains bigram, trigram, and Word2Vec models. Applies phrase models.
 
-### 4. culture_dictionary.py
+### 5. culture_dictionary.py
 Expands seed words into domain dictionaries using Word2Vec.
 
-### 5. culture_models.py
+### 6. culture_models.py
 Implements phrase model training and Word2Vec training.
 
-### 6. score.py
+### 7. score.py
 Creates TF, TF-IDF, and WF-IDF document-level scores.
 
-### 7. aggregate_scores.py
+### 8. aggregate_scores.py
 Aggregates document scores to firm-level scores.
 
-### 8. merge_scores.py
+### 9. merge_scores.py
 Merges firm-level and document-level score files.
-
-### 9. EC_Extraction_May17_Saeed.py
-Extracts Q&A sections from raw EC files.
 
 ### 10. risk_combination_score.py
 Calculates risk-based combination scores using dictionary and risk windows.
