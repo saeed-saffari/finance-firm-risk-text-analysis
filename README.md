@@ -54,7 +54,7 @@ Generic English stopword list used during cleaning to remove high-frequency non-
 ### 0. global_options.py
 Central configuration file that controls input paths, output paths, model paths, seed words, CPU settings, and parsing options.
 
-### 1. EC_Extraction_May17_Saeed.py
+### 1. EC_Extraction.py
 Extracts Q&A sections from raw EC files.
 
 ### 2. preprocess.py
