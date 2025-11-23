@@ -99,6 +99,14 @@ Calculates risk-based combination scores using dictionary and risk windows.
 
 ---
 
+## Pipeline Diagram
+
+Below is the full pipeline overview showing how all modules, functions, and data components interact throughout the workflow.
+
+![Pipeline Diagram](./Codes Overview.jpg)
+
+---
+
 ## Notes
 
 - Real datasets are not included.  
