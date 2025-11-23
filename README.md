@@ -27,7 +27,32 @@ finance-firm-risk-text-analysis/
 
 ---
 
+## Folder Descriptions
+
+### inputs_sample/
+Shows small, synthetic examples of the expected input format.
+
+### outputs_sample/
+Demonstrates the final output files created by the pipeline.
+
+### culture/
+Contains helper modules for dictionary building, phrase models, file utilities, and preprocessing functions used across the pipeline.
+
+### models/
+Stores the trained phrase models (bigram and trigram) and the Word2Vec model used for dictionary expansion and scoring.
+
+### stanford-corenlp-full-2018-10-05/
+CoreNLP package required for sentence splitting, tokenization, POS tagging, and lemmatization. The parsing scripts depend on this folder.
+
+### StopWords_Generic.txt
+Generic English stopword list used during cleaning to remove high-frequency non-informative words.
+
+---
+
 ## Code Overview
+
+### 0. global_options.py
+Central configuration file that controls input paths, output paths, model paths, seed words, CPU settings, and parsing options. This file ensures consistent setup across all scripts.
 
 ### 1. EC_Extraction_May17_Saeed.py
 Extracts Q&A sections from raw EC files.
