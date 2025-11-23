@@ -103,8 +103,7 @@ Calculates risk-based combination scores using dictionary and risk windows.
 
 Below is the full pipeline overview showing how all modules, functions, and data components interact throughout the workflow.
 
-![Pipeline Diagram](Codes Overview.jpg)
-<img src = "https://github.com/saeed-saffari/finance-firm-risk-text-analysis/blob/main/Codes%20Overview.jpg?raw=true" width="400" >
+<img src = "https://github.com/saeed-saffari/finance-firm-risk-text-analysis/blob/main/Codes%20Overview.jpg?raw=true" width="700" >
 
 
 ---
